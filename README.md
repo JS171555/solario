@@ -4,7 +4,7 @@
 
 **Um jogo de puzzle e exploração em perspectiva isométrica.**
 
-[![Jogar](https://img.shields.io/badge/jogar-solario--ten.vercel.app-F28B7B?style=flat-square&logo=vercel&logoColor=white)](https://solario-ten.vercel.app/) [![Status](https://img.shields.io/badge/status-arquivado-8E7FC4?style=flat-square)](#status-do-projeto) [![Versão](https://img.shields.io/badge/vers%C3%A3o-0.1.0-3B3360?style=flat-square)](#status-do-projeto) [![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white&style=flat-square)](https://vite.dev) [![Ionic Core](https://img.shields.io/badge/Ionic%20Core-8-3880FF?logo=ionic&logoColor=white&style=flat-square)](https://ionicframework.com) [![GSAP](https://img.shields.io/badge/GSAP-3-88CE02?logo=greensock&logoColor=white&style=flat-square)](https://gsap.com) [![Supabase](https://img.shields.io/badge/Supabase-opcional-3FCF8E?logo=supabase&logoColor=white&style=flat-square)](https://supabase.com) [![PWA](https://img.shields.io/badge/PWA-offline-5A0FC8?style=flat-square)](#pwa-e-offline)
+[![Jogar](https://img.shields.io/badge/jogar-solario--ten.vercel.app-F28B7B?style=flat-square&logo=vercel&logoColor=white)](https://solario-ten.vercel.app/) [![Status](https://img.shields.io/badge/status-arquivado-8E7FC4?style=flat-square)](#status-do-projeto) [![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white&style=flat-square)](https://vite.dev) [![Ionic Core](https://img.shields.io/badge/Ionic%20Core-8-3880FF?logo=ionic&logoColor=white&style=flat-square)](https://ionicframework.com) [![GSAP](https://img.shields.io/badge/GSAP-3-88CE02?logo=greensock&logoColor=white&style=flat-square)](https://gsap.com) [![Supabase](https://img.shields.io/badge/Supabase-opcional-3FCF8E?logo=supabase&logoColor=white&style=flat-square)](https://supabase.com) [![PWA](https://img.shields.io/badge/PWA-offline-5A0FC8?style=flat-square)](#pwa-e-offline)
 
 </div>
 
@@ -51,7 +51,7 @@ O progresso é salvo automaticamente no aparelho e, se o Supabase estiver config
 
 ## Status do projeto
 
-Este projeto está **abandonado**. Ele foi desenvolvido em cinco etapas e interrompido com duas fases jogáveis, quando o núcleo técnico já estava completo e estável.
+Este projeto está **abandonado** na versão **0.1.0**. Ele foi desenvolvido em cinco etapas e interrompido com duas fases jogáveis, quando o núcleo técnico já estava completo e estável.
 
 | Área | Situação |
 | --- | --- |
@@ -130,16 +130,14 @@ flowchart TD
   A[index.html] --> B[src/main.js]
   B --> C[scenes/hero.js]
   B --> D[game/world.js]
-  D --> E[game/iso.js]
-  D --> F[game/level1.js]
-  D --> G[game/level2.js]
-  B --> H[game/thumb.js]
-  B --> I[game/transition.js]
-  B --> J[services/progress.js]
-  J --> K[services/storage.js]
-  J --> L[services/supabase.js]
-  B --> M[services/audio.js]
-  N[scripts/precache.mjs] --> O[dist/sw.js]
+  B --> E[services/]
+  B --> F[thumb.js + transition.js]
+  D --> G[iso.js]
+  D --> H[level1.js + level2.js]
+  E --> I[progress.js]
+  E --> J[audio.js]
+  I --> K[storage.js + supabase.js]
+  L[scripts/precache.mjs] --> M[dist/sw.js]
 ```
 
 **Projeção isométrica.** Toda a geometria do jogo vem de uma única função em `src/game/iso.js`: cada bloco é um cubo de grade convertido em três polígonos (topo, face esquerda, face direita) com cores fixas por paleta.
