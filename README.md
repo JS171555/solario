@@ -4,7 +4,7 @@
 
 **Um jogo de puzzle e exploração em perspectiva isométrica.**
 
-[![Status](https://img.shields.io/badge/status-arquivado-8E7FC4?style=flat-square)](#status-do-projeto) [![Versão](https://img.shields.io/badge/vers%C3%A3o-0.1.0-3B3360?style=flat-square)](#status-do-projeto) [![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white&style=flat-square)](https://vite.dev) [![Ionic Core](https://img.shields.io/badge/Ionic%20Core-8-3880FF?logo=ionic&logoColor=white&style=flat-square)](https://ionicframework.com) [![GSAP](https://img.shields.io/badge/GSAP-3-88CE02?logo=greensock&logoColor=white&style=flat-square)](https://gsap.com) [![Supabase](https://img.shields.io/badge/Supabase-opcional-3FCF8E?logo=supabase&logoColor=white&style=flat-square)](https://supabase.com) [![PWA](https://img.shields.io/badge/PWA-offline-5A0FC8?style=flat-square)](#pwa-e-offline)
+[![Jogar](https://img.shields.io/badge/jogar-solario--ten.vercel.app-F28B7B?style=flat-square&logo=vercel&logoColor=white)](https://solario-ten.vercel.app/) [![Status](https://img.shields.io/badge/status-arquivado-8E7FC4?style=flat-square)](#status-do-projeto) [![Versão](https://img.shields.io/badge/vers%C3%A3o-0.1.0-3B3360?style=flat-square)](#status-do-projeto) [![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white&style=flat-square)](https://vite.dev) [![Ionic Core](https://img.shields.io/badge/Ionic%20Core-8-3880FF?logo=ionic&logoColor=white&style=flat-square)](https://ionicframework.com) [![GSAP](https://img.shields.io/badge/GSAP-3-88CE02?logo=greensock&logoColor=white&style=flat-square)](https://gsap.com) [![Supabase](https://img.shields.io/badge/Supabase-opcional-3FCF8E?logo=supabase&logoColor=white&style=flat-square)](https://supabase.com) [![PWA](https://img.shields.io/badge/PWA-offline-5A0FC8?style=flat-square)](#pwa-e-offline)
 
 </div>
 
@@ -19,6 +19,8 @@
 **Solário** é um jogo original de puzzle e exploração em perspectiva isométrica. Você guia **Lume**, uma viajante com lanterna, por torres, pontes e escadas que só se conectam quando vistas do ângulo certo. O objetivo de cada fase é atravessar a arquitetura e acender o farol no topo.
 
 O jogo foi construído inteiramente com tecnologias web, sem engine 3D e sem arquivos de imagem para o cenário: o mundo é desenhado em **SVG** a partir de uma grade isométrica, as animações usam **GSAP** e todo o áudio é **sintetizado em tempo real** com a Web Audio API.
+
+A versão jogável está publicada em **[solario-ten.vercel.app](https://solario-ten.vercel.app/)** e permanece no ar enquanto o deploy na Vercel existir — sem qualquer compromisso de disponibilidade, já que o projeto não é mais mantido.
 
 <div align="center">
   <img src="assets/screenshots/menu.png" alt="Menu inicial do Solário em desktop" width="100%">
